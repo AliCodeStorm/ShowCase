@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/images/logo.jps.jpg" class="h-8 rounded-full" alt="ShowCase Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ShowCase</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Get Started
+                </button>
+                <!-- Hamburger Menu -->
+                <button id="menu-toggle" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#HomeSection"
+                            class="flex items-center gap-2 py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">
+                            <i data-lucide="home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#AboutSection"
+                            class="flex items-center gap-2 py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <i data-lucide="info"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ServicesSection"
+                            class="flex items-center gap-2 py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <i data-lucide="briefcase"></i> Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ContactSection"
+                            class="flex items-center gap-2 py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <i data-lucide="mail"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section
+        class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"
+        id="HomeSection">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Xiaomi: Innovation Within Reach. Discover Powerful Smartphones.</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">We curate Xiaomi's latest
+                releases, where powerful features, smart design, and accessible pricing converge to redefine mobile
+                experiences and empower digital lifestyles.
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="#"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Get started
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Learn more
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="relative bg-cover bg-center bg-no-repeat h-[600px]"
+        style="background-image: url('/images/backgound.jpg');" id="AboutSection">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-6">
+            <h2 class="text-4xl font-bold text-white mb-4">About Xiaomi Hub</h2>
+            <p class="text-lg text-gray-300 max-w-2xl">
+                Welcome to Xiaomi Hub – your go-to platform for all things Xiaomi! We provide expert reviews,
+                detailed comparisons, and the latest news on Xiaomi smartphones, accessories, and MIUI updates.
+                Stay ahead with us and make informed choices for your next Xiaomi device.
+            </p>
+            <a href="/phones"
+                class="mt-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                Explore Phones
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 bg-cover bg-center" style="background-image: url('/images/background.jpg');">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 text-white">
+            <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                <a href="#"
+                    class="bg-blue-500 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
+                    <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 14">
+                        <path
+                            d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z" />
+                    </svg>
+                    Phone Basics
+                </a>
+                <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-2">Getting Started: Essential Phone Setup
+                    Guide</h1>
+                <p class="text-lg font-normal text-gray-400 mb-6">New to smartphones? Our guide simplifies initial
+                    setup, from account creation to network connection, ensuring a seamless start.</p>
+                <a href="#"
+                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-500">
+                    Start Setup
+                    <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Troubleshooting Card -->
+                <div class="relative bg-cover bg-center shadow-lg rounded-lg p-8 md:p-12 hover:shadow-xl transition"
+                    style="background-image: url('/images/troubleshoot.jpg');">
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg">
+                        <a href="#"
+                            class="bg-green-500 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
+                            <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 18 18">
+                                <path
+                                    d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
+                            </svg>
+                            Troubleshooting
+                        </a>
+                        <h2 class="text-white text-3xl font-extrabold mb-2">Fixing Common Phone Issues</h2>
+                        <p class="text-lg font-normal text-gray-300 mb-4">Learn how to resolve battery, connectivity,
+                            and app issues quickly.</p>
+                        <a href="#"
+                            class="text-blue-400 hover:underline font-medium text-lg inline-flex items-center">Read More
+                            <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Best Apps Card -->
+                <div class="relative bg-cover bg-center shadow-lg rounded-lg p-8 md:p-12 hover:shadow-xl transition"
+                    style="background-image: url('/images/collection1.jpg');">
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg">
+                        <a href="#"
+                            class="bg-purple-500 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
+                            <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 20 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15" />
+                            </svg>
+                            Apps & Features
+                        </a>
+                        <h2 class="text-white text-3xl font-extrabold mb-2">Best Apps for Xhomi Phones</h2>
+                        <p class="text-lg font-normal text-gray-300 mb-4">Explore top productivity, entertainment, and
+                            security apps optimized for Xhomi devices.</p>
+                        <a href="#"
+                            class="text-blue-400 hover:underline font-medium text-lg inline-flex items-center">Read More
+                            <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ServicesSection" class="py-12 bg-gray-900 bg-cover bg-center"
+        style="background-image: url('/images/backgound.jpg');">
+        <div class="max-w-6xl mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-6">Xhomi Services</h2>
+            <p class="mb-12">Experience the best mobile services tailored for your needs.</p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Service Card -->
+                <div class="relative bg-cover bg-center shadow-lg rounded-lg p-6 hover:shadow-xl transition"
+                    style="background-image: url('/images/collection1.jpg');">
+                    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Phone Repair</h3>
+                        <p class="mb-4">Fast and reliable repair services for all Xhomi models.</p>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Learn
+                            More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative bg-cover bg-center shadow-lg rounded-lg p-6 hover:shadow-xl transition"
+                    style="background-image: url('/images/collection2.jpg');">
+                    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Device Upgrade</h3>
+                        <p class="mb-4">Trade-in your old device and get the latest Xhomi phone at the best price.</p>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Learn
+                            More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative bg-cover bg-center shadow-lg rounded-lg p-6 hover:shadow-xl transition"
+                    style="background-image: url('/images/collection3.jpg');">
+                    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Customer Support</h3>
+                        <p class="mb-4">24/7 support for troubleshooting, warranty, and technical assistance.</p>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Get Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-[url('/images/backgound.jpg')] bg-cover bg-center">
+        <div class="bg-dark bg-opacity-80">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-blue-500 sm:text-4xl">Technical Specifications
+                    </h2>
+                    <p class="mt-4 text-white">The walnut wood card tray is precision milled to perfectly fit a stack
+                        of
+                        Focus cards. The powder coated steel divider separates active cards from new ones, or can be
+                        used to
+                        archive important task lists.</p>
+
+                    <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Origin</dt>
+                            <dd class="mt-2 text-sm text-white">Designed by Good Goods, Inc.</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Material</dt>
+                            <dd class="mt-2 text-sm text-white">Solid walnut base with rare earth magnets and powder
+                                coated steel card cover</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Dimensions</dt>
+                            <dd class="mt-2 text-sm text-white">6.25&quot; x 3.55&quot; x 1.15&quot;</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Finish</dt>
+                            <dd class="mt-2 text-sm text-white">Hand sanded and finished with natural oil</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Includes</dt>
+                            <dd class="mt-2 text-sm text-white">Wood card tray and 3 refill packs</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-white">Considerations</dt>
+                            <dd class="mt-2 text-sm text-white">Made from natural materials. Grain and color vary
+                                with
+                                each item.</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                    <img src="/images/collection1.jpg"
+                        alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                        class="rounded-lg bg-gray-100">
+                    <img src="/images/collection2.jpg"
+                        alt="Top down view of walnut card tray with embedded magnets and card groove."
+                        class="rounded-lg bg-gray-100">
+                    <img src="/images/collection3.jpg"
+                        alt="Side of walnut card tray with card groove and recessed card area."
+                        class="rounded-lg bg-gray-100">
+                    <img src="/images/collection4.jpg"
+                        alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                        class="rounded-lg bg-gray-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="ContactSection" class="relative bg-cover bg-center py-12"
+        style="background-image: url('/images/collection4.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative max-w-3xl mx-auto px-6 text-white">
+            <h2 class="text-3xl font-extrabold mb-6 text-center">Contact Us</h2>
+            <form action="#" method="POST" class="bg-gray-800 bg-opacity-80 p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full mt-1 p-3 rounded-md bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Your Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full mt-1 p-3 rounded-md bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="w-full mt-1 p-3 rounded-md bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 py-3 text-lg font-semibold rounded-lg focus:ring-4 focus:ring-blue-500">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="relative bg-gray-900 text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30"
+            style="background-image: url('/images/collection1.jpg');"></div>
+
+        <!-- Overlay -->
+        <div class="relative z-10 px-6 py-12 text-center bg-black bg-opacity-50">
+            <h2 class="text-3xl font-bold">Xiaomi Phones & Accessories</h2>
+            <p class="mt-2 text-gray-300">Explore the latest Xiaomi devices, accessories, and updates.</p>
+
+            <!-- Navigation Links -->
+            <div class="mt-6 flex justify-center space-x-6 text-gray-300">
+                <a href="#" class="hover:text-white">Home</a>
+                <a href="#" class="hover:text-white">About</a>
+                <a href="#" class="hover:text-white">Services</a>
+                <a href="#" class="hover:text-white">Contact</a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-facebook w-6 h-6 text-blue-500"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-twitter w-6 h-6 text-blue-400"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-instagram w-6 h-6 text-pink-500"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white">
+                    <i class="fab fa-youtube w-6 h-6 text-red-500"></i>
+                </a>
+            </div>
+
+            <!-- Xiaomi Copyright & Info -->
+            <p class="mt-6 text-gray-400">&copy; 2025 Xiaomi Phones. All rights reserved.</p>
+            <p class="text-gray-400">Official Xiaomi Partner | Latest Mi, Redmi & POCO Devices</p>
+        </div>
+    </footer>
+    <!-- Add Lucide Icons (for better icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            let navbar = document.getElementById("navbar-sticky");
+            navbar.classList.toggle("hidden");
+        });
+
+        // Load Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
